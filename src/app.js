@@ -12,7 +12,7 @@ const app = express();
 app.use(
   cors({
     origin: ["http://localhost:5173",
-      "https://madhavart.vercel.app/",
+      "https://madhavart.vercel.app/admin/login",
     ],
     credentials: true,
   })
@@ -24,7 +24,6 @@ app.use(express.json({ limit: "10mb" }));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/gallery", galleryRoutes);
-app.use("/api/test-cloudinary", testCloudinaryRoutes);
 app.use(
   "/api/contact",
   contactRoutes
