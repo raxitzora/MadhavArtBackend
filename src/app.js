@@ -12,7 +12,7 @@ const app = express();
 app.use(
   cors({
     origin: ["http://localhost:5173",
-      "https://madhavart.vercel.app/admin/login",
+      "https://madhavart.vercel.app",
     ],
     credentials: true,
   })
